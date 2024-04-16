@@ -50,6 +50,7 @@ header {
 
 h1 {
     font-family: 'Madimi One', sans-serif;
+    color: black;
 }
 
 header h1 {
@@ -57,7 +58,7 @@ header h1 {
 }
 
 h2 {
-    color: #F8E559; /* yellow */
+    color: black; 
 }
 
 header p {
@@ -66,7 +67,7 @@ header p {
 
 a {
     text-decoration: none;
-    color: #F8E559; /* yellow */
+    color: black; 
     transition: color 0.3s; }
 
 a:hover {
@@ -130,7 +131,7 @@ footer {
 }
 
 h2 {
-    color: #F8E559; /* yellow */
+    color: blsck;
     text-align: center;    
 }
 
