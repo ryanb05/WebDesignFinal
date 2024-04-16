@@ -26,6 +26,22 @@ header {
     align-items: center;
 }
 
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -34,7 +50,6 @@ header {
 
 h1 {
     font-family: 'Madimi One', sans-serif;
-    color: black;
 }
 
 header h1 {
@@ -42,7 +57,7 @@ header h1 {
 }
 
 h2 {
-    color: black; 
+    color: #F8E559; /* yellow */
 }
 
 header p {
@@ -51,7 +66,7 @@ header p {
 
 a {
     text-decoration: none;
-    color: black; 
+    color: #F8E559; /* yellow */
     transition: color 0.3s; }
 
 a:hover {
@@ -59,7 +74,6 @@ a:hover {
 }
 p {
     font-family: 'Cabin', sans-serif;
-    color: black;
 }
 
 /* Navigation Styles */
@@ -106,12 +120,13 @@ section {
 }
 
 section p {
-    color: black;
+    color: #F8E559; /* yellow */
 }
 
 section h3 {
-    color: black;
+    color: #F8E559; /* yellow */
 }
+
 
 /* Footer Styles */
 footer {
@@ -123,7 +138,7 @@ footer {
 }
 
 h2 {
-    color: blsck;
+    color: #F8E559; /* yellow */
     text-align: center;    
 }
 
@@ -197,10 +212,3 @@ h2 {
     }
 }
 
-footer {
-    background: #728d80;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
