@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Berrigan">
+    <!-- the password is ScoobyDoo -->
+    <link rel="stylesheet" href="css/passwordStyles.css">
+	<title></title>
+    </head>
+
+<body>
+    <header>
+        <div class="container">
+	    <title>Retro Ram</title>
+            <h1><a href="index.html" aria-label="Home">Retro Ram</a></h1>
+            <div class="logo">
+                <a href="index.html" aria-label="Home"><img src="img/logo.jpg" alt="logo ram" width="200" height="125"></a>
+            </div>
+        </div>
+    </header>	
+
+<div id="passwordPage" style="display: flex; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+        <div style="background: white; padding: 20px;">
+            <h2>Please enter the password to access our Home Page:</h2>
+            <input type="password" id="passwordInput">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("passwordInput").value;
+            if (password === "ScoobyDoo") {
+                document.getElementById("passwordPage").style.display = "none";
+                window.location.href = "home.html"; // Corrected redirection to "home.html"
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+
+</html>

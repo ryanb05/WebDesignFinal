@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Berrigan">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap">
+
+    <title>Retro Ram</title>
+</head>
+
+<body>
+    <h1>Retro Games Cart</h1>
+    <form action="purchase.php" method="post">
+        <fieldset>
+            <legend>Select the retro games you want to purchase:</legend>
+            <input type="checkbox" id="pokemon" name="game" value="PokemonGreenVersion">
+            <label for="pokemon">Pokemon Green Version - $20</label><br>
+            <input type="checkbox" id="SpiderMan" name="game" value="SpiderMan">
+            <label for="SpiderMan">SpiderMan - $15</label><br>
+            <input type="checkbox" id="TheJoker" name="game" value="TheJoker">
+            <label for="TheJoker">The Joker - $18</label><br>
+            <input type="checkbox" id="Castlevania" name="game" value="Castlevania">
+            <label for="Castlevania">Castlevania - $25</label><br>
+            <input type="checkbox" id="FinalFantasy" name="game" value="FinalFantasy">
+            <label for="FinalFantasy">Final Fantasy - $22</label><br>
+            <input type="checkbox" id="BattleUnitZeoth" name="game" value="BattleUnitZeoth">
+            <label for="BattleUnitZeoth">Battle Unit Zeoth - $22</label><br>
+        </fieldset>
+        <br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1"><br><br>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Purchase">
+    </form>
+</body>
+</html>
